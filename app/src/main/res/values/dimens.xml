@@ -10,4 +10,5 @@
     <dimen name="toolbar_height">200dp</dimen>
     <dimen name="text_nested_scroll_size">20sp</dimen>
     <dimen name="standard_10">10dp</dimen>
+    <dimen name="bottom_sheet_height">80dp</dimen>
 </resources>

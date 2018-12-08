@@ -1,18 +1,16 @@
 package com.patronas.material_design_example;
 
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private boolean isFABOpen= false;
+    private boolean isFABOpen = false;
     private FloatingActionButton fab1, fab2, fab3;
 
     @Override
@@ -22,9 +20,21 @@ public class MainActivity extends AppCompatActivity {
 
         initSimpleFloatingButton();
         initCustomFloatingButton();
-
-
         initNestedScroll();
+        initBottomSheet();
+
+    }
+
+    private void initBottomSheet() {
+        Button btn_bottom_sheet = findViewById(R.id.btn_bottom_sheet);
+        btn_bottom_sheet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, BottomSheetActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     private void initNestedScroll() {
@@ -57,24 +67,24 @@ public class MainActivity extends AppCompatActivity {
         fabCustom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!isFABOpen){
+                if (!isFABOpen) {
                     showFABMenu();
-                }else{
+                } else {
                     closeFABMenu();
                 }
             }
         });
     }
 
-    private void showFABMenu(){
-        isFABOpen=true;
+    private void showFABMenu() {
+        isFABOpen = true;
         fab1.animate().translationY(-getResources().getDimension(R.dimen.standard_65));
         fab2.animate().translationY(-getResources().getDimension(R.dimen.standard_130));
         fab3.animate().translationY(-getResources().getDimension(R.dimen.standard_195));
     }
 
-    private void closeFABMenu(){
-        isFABOpen=false;
+    private void closeFABMenu() {
+        isFABOpen = false;
         fab1.animate().translationY(0);
         fab2.animate().translationY(0);
         fab3.animate().translationY(0);
