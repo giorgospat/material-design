@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Material-Design-Example</string>
+    <string name="label_bottom_sheet">Bottom sheet</string>
+    <string name="bottom_sheet_open">Open bottom sheet</string>
+    <string name="bottom_sheet_close">Close bottom sheet</string>
+    <string name="bottom_sheet_content">Bottom sheet content</string>
+    <string name="text_bottom_sheet_content">Main Content</string>
 </resources>
