@@ -6,13 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/standard_20"
+        android:src="@android:drawable/ic_dialog_info"
+        app:elevation="@dimen/standard_6"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="@dimen/fab_elevation" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/standard_20"
+        android:layout_marginEnd="@dimen/standard_8"
+        android:layout_marginBottom="@dimen/standard_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/standard_20"
+        android:layout_marginEnd="@dimen/standard_8"
+        android:layout_marginBottom="@dimen/standard_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/standard_20"
+        android:layout_marginEnd="@dimen/standard_8"
+        android:layout_marginBottom="@dimen/standard_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_with_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/standard_20"
+        android:src="@android:drawable/ic_input_add"
+        app:elevation="@dimen/standard_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab"
+        app:pressedTranslationZ="@dimen/fab_elevation" />
 
 </android.support.constraint.ConstraintLayout>
