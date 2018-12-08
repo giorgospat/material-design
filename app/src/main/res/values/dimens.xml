@@ -7,4 +7,7 @@
     <dimen name="standard_195">195dp</dimen>
     <dimen name="standard_6">6dp</dimen>
     <dimen name="fab_elevation">12dp</dimen>
+    <dimen name="toolbar_height">200dp</dimen>
+    <dimen name="text_nested_scroll_size">20sp</dimen>
+    <dimen name="standard_10">10dp</dimen>
 </resources>
