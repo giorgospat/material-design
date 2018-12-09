@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Material-Design-Example</string>
+    <string name="label_snackbar">Snackbar</string>
+    <string name="label_simple_snack">Simple Snackbar</string>
+    <string name="label_custom_snack">Custom Snackbar</string>
+    <string name="snackbar_simple_message">This is a simple snackbar!</string>
+    <string name="simple_snackbar_click_toast">Simple snackbar closed</string>
+    <string name="custom_snackbar_click_toast">Custom snackbar closed</string>
+    <string name="close">Close</string>
+    <string name="snackbar_custom_message">This is a custom snackbar. Inflating custom layouts to snackbar are discouraged by Android though. Snackbar\'s intended use is to show a message and an action. They\'re essentially like interactive toasts.</string>
+    <string name="label_simple_snack_customize">Simple snackbar customize</string>
 </resources>
