@@ -22,7 +22,19 @@ public class MainActivity extends AppCompatActivity {
         initCustomFloatingButton();
         initNestedScroll();
         initBottomSheet();
+        initSnackbar();
 
+    }
+
+    private void initSnackbar() {
+        Button btn_snackbar = findViewById(R.id.btn_snackbar);
+        btn_snackbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, SnackbarActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void initBottomSheet() {
