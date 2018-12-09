@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_8">8dp</dimen>
+    <dimen name="standard_20">20dp</dimen>
+    <dimen name="standard_65">65dp</dimen>
+    <dimen name="standard_130">130dp</dimen>
+    <dimen name="standard_195">195dp</dimen>
+    <dimen name="standard_6">6dp</dimen>
+    <dimen name="fab_elevation">12dp</dimen>
+    <dimen name="toolbar_height">200dp</dimen>
+    <dimen name="text_nested_scroll_size">20sp</dimen>
+    <dimen name="standard_10">10dp</dimen>
+    <dimen name="bottom_sheet_height">80dp</dimen>
+</resources>
