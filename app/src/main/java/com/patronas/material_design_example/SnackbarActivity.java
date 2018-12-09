@@ -80,12 +80,18 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
 
 
     private void displayCustomSnack() {
+        /*
+         *  Inflating custom layouts to snackbar are discouraged by Android though.
+         *  Snackbar's intended use is to show a message and an action.
+         *  They're essentially like interactive toasts.
+         */
+
         final Snackbar customSnackbar = Snackbar.make(costraint_parent, "", Snackbar.LENGTH_INDEFINITE);
         Snackbar.SnackbarLayout layout = (Snackbar.SnackbarLayout) customSnackbar.getView();
 
         LayoutInflater mInflater = (LayoutInflater) SnackbarActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        View snackView = mInflater.inflate(R.layout.custom_layout_snackbar, null);
+        View snackView = mInflater.inflate(R.layout.custom_layout_snackbar, costraint_parent, false);
         LinearLayout linear_custom_snack_container = snackView.findViewById(R.id.linear_custom_snack_container);
         linear_custom_snack_container.setOnClickListener(new View.OnClickListener() {
             @Override
