@@ -74,7 +74,7 @@ public class BottomSheetActivity extends AppCompatActivity {
     /**
      * manually opening / closing bottom sheet on text click
      */
-    public void toggleBottomSheet() {
+    private void toggleBottomSheet() {
         if (sheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED) {
             sheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
             text_sheet_title.setText(getString(R.string.bottom_sheet_close));
